@@ -15,7 +15,7 @@ You can use es6 or you can use es5.
 Try to write your code and tests in a way that would be approved in a PR.
 */
 
-export default (inputString) => {
+const frequencyInString = (inputString) => {
     if (typeof inputString !== "string") {
         throw new Error("Input must be a string.");
     }
@@ -65,3 +65,5 @@ export default (inputString) => {
     });
     return frequencyOfLettersNumbersPunctuation;
 };
+
+module.exports = frequencyInString;
